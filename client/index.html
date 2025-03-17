@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Client</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body onload="todoGet()">
-    <div class="todo-create">
-        <input type="text" name="" id="inputTodo">
-        <button onclick="todoCreate()">Add Todo</button>
-    </div>
-    <div class="todos">
-        <!-- <span></span>
-        <button>Edit</button>
-        <button>Delete</button> -->
+    <div class="todoApp">
+        <div class="todo-create">
+            <input type="text" name="" id="inputTodo" placeholder="Enter new todo">
+            <button onclick="todoCreate()">Add Todo</button>
+        </div>
+        <div class="todos">
+            <!-- <span>Pakistan Zinadabad</span>
+            <div>
+                <button>
+                    <img src="./images/editing.png" alt="">
+                </button>
+                <button>
+                    <img src="./images/remove.png" alt="">
+                </button> -->
+            </div>
+        </div>
     </div>
 </body>
 <script src="app.js"></script>
+
 </html>
