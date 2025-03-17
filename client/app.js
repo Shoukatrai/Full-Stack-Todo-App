@@ -1,4 +1,6 @@
 const todosContainer = document.querySelector(".todos")
+const inputTodo = document.querySelector("#inputTodo")
+
 console.log(todosContainer)
 
 const todoGet = ()=>{
@@ -24,6 +26,15 @@ const todoGet = ()=>{
 
 const todoCreate = ()=>{
     console.log("todoGet")
-    fetch("http://localhost:3030/todocreate")
-    .then((res)=>res.json())
+    const data = {
+        newTask : inputTodo.value
+    }
+    fetch("http://localhost:3030/todocreate" ,{
+        method : "POST",
+        headers : {
+            "Content-Type" : "application/json"
+        },
+        body : JSON.stringify(data)
+    } )
+    
 }
